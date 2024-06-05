@@ -6,7 +6,7 @@ export default function SignupBanner() {
     <div className="flex h-full items-center">
       <div className="flex flex-col  items-center justify-center py-5 md:px-5 text-center h-full">
         <div className="bg-green rounded-xl" style={{ overflow: "hidden" }}>
-          <img src={banner} alt="signup_banner" />
+          <img src={banner} alt="signup_image_banner" />
         </div>
         <div>
           <h1 className="text-3xl py-5 text-green">
