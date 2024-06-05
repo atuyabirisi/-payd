@@ -1,11 +1,12 @@
 import { TiArrowRightThick } from "react-icons/ti";
+import banner from "../../assets/image (1).png";
 
 export default function SignupBanner() {
   return (
     <div className="flex h-full items-center">
       <div className="flex flex-col  items-center justify-center py-5 md:px-5 text-center h-full">
         <div className="bg-green rounded-xl" style={{ overflow: "hidden" }}>
-          <img src="src\assets\image (1).png" alt="signup_banner" />
+          <img src={banner} alt="signup_banner" />
         </div>
         <div>
           <h1 className="text-3xl py-5 text-green">

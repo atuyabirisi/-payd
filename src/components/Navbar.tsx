@@ -1,4 +1,5 @@
 import { TiArrowRightThick } from "react-icons/ti";
+import logo from "../assets/payd.png";
 
 export default function Navbar() {
   return (
@@ -19,7 +20,7 @@ export default function Navbar() {
       </div>
       <div className="flex flex-1 items-center justify-center py-1">
         <a href="/">
-          <img src="src\assets\payd.png" alt="payd_logo" />
+          <img src={logo} alt="payd_logo" />
         </a>
       </div>
       <div className="hidden md:flex flex-1 items-center">
