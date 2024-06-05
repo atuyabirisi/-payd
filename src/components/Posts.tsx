@@ -66,7 +66,14 @@ export default function Posts() {
         </Alert>
       )}
       {isLoading ? (
-        <Stack>
+        <Stack
+          maxW="98%"
+          marginX="auto"
+          pt="15px"
+          boxShadow={"md"}
+          marginY="10px"
+          borderRadius="10px"
+        >
           {skeletons.map((skeleton) => (
             <Skeleton height="40px" key={skeleton} />
           ))}
@@ -74,7 +81,7 @@ export default function Posts() {
       ) : (
         <>
           <TableContainer
-            maxW="90%"
+            maxW="98%"
             marginX="auto"
             pt="15px"
             fontSize="lg"

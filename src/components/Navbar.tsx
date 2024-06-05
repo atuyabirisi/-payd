@@ -16,11 +16,13 @@ export default function Navbar() {
         </form>
       </div>
       <div className="flex flex-1 items-center justify-center py-1">
-        <img src="src\assets\payd.png" alt="payd_logo" />
+        <a href="/">
+          <img src="src\assets\payd.png" alt="payd_logo" />
+        </a>
       </div>
       <div className="hidden md:flex flex-1 items-center">
         <div className="w-full flex justify-center h-fit">
-          <a href="#" className="text-white flex gap-x-2">
+          <a href="/posts" className="text-white flex gap-x-2">
             <span>
               <b>Blog:</b>
             </span>

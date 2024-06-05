@@ -15,7 +15,7 @@ export default function SignupBanner() {
             molestias fuga eaque eum perferendis enim quod exercitationem amet,
             officia possimus debitis{" "}
             <span className="text-white underline">
-              <a href="#">See what is new</a>
+              <a href="/posts">See what is new</a>
             </span>
           </p>
         </div>
