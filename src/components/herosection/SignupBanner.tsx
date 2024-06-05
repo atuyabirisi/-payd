@@ -12,10 +12,12 @@ export default function SignupBanner() {
             <b>Money & Vibes</b>
           </h1>
           <p className="md:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
-            eligendi quaerat. Nemo sapiente ducimus voluptates earum obcaecati
-            molestias fuga eaque eum perferendis enim quod exercitationem amet,
-            officia possimus debitis <br />
+            Payd lets you make your payments magical. Right from payment pages
+            to generating invoices, we provide you with the tools to make your
+            money easy. We enable you to conveniently access multiple payment
+            channels on one platform, powered by licensed payment service
+            providers.
+            <br />
             <span className="text-white underline flex justify-center">
               <a href="/posts" className="flex gap-x-3 items-end">
                 See what is new{" "}

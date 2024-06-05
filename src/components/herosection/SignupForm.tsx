@@ -19,9 +19,7 @@ export default function SignupForm() {
     <div className="py-16 px-2 md:px-10 rounded-xl shadow-2xl my-2 bg-green">
       <div className="mb-4 text-center text-background">
         <h1 className="text-3xl mb-4 font-bold">Sign up Today</h1>
-        <h1 className="text-xl font-semibold ">
-          Join a community of online workers
-        </h1>
+        <h1 className="text-xl font-semibold ">Make your money work for you</h1>
       </div>
       <form
         onSubmit={handleSubmit((data) => {
