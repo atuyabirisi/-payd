@@ -1,13 +1,16 @@
 export default function Navbar() {
   return (
-    <div className="flex bg-background py-4">
+    <div
+      className="flex bg-background py-4"
+      style={{ position: "sticky", top: 0 }}
+    >
       <div className="hidden md:flex flex-1 items-center justify-center">
         <form action="" className="flex h-fit mx-2">
           <input
             type="text"
             name="search"
             id="search"
-            className="block w-full rounded-md border-0 py-3 pl-7 pr-20 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+            className="block w-full rounded-xl border-0 py-3 pl-7 pr-20 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             placeholder="search..."
           />
         </form>
