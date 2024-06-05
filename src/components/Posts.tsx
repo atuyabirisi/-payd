@@ -11,6 +11,7 @@ import {
   AlertTitle,
   Skeleton,
   Stack,
+  Container,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import apiClient from "../services/apiClient";
@@ -18,6 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "../../store";
 import { updateTotalPosts } from "../slices/pagination";
 import { usePagination } from "../services/usePagination";
+import Paginate from "./Paginate";
 
 interface PostData {
   body: string;
@@ -70,26 +72,46 @@ export default function Posts() {
           ))}
         </Stack>
       ) : (
-        <TableContainer maxW="90%" marginX="auto" pt="15px" fontSize="lg">
-          <Table variant="simple">
-            <Thead bg="#e2e8f0">
-              <Tr>
-                <Th>PostId</Th>
-                <Th>Tittle</Th>
-                <Th>Body</Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              {paginatedPosts.map((post, index) => (
-                <Tr key={index}>
-                  <Td>{post.id}</Td>
-                  <Td>{post.title}</Td>
-                  <Td>{post.body}</Td>
+        <>
+          <TableContainer
+            maxW="90%"
+            marginX="auto"
+            pt="15px"
+            fontSize="lg"
+            border="1px"
+            boxShadow={"md"}
+            marginY="10px"
+            borderRadius="10px"
+          >
+            <Table variant="striped" colorScheme="green">
+              <Thead bg="#e2e8f0" py="3px">
+                <Tr>
+                  <Th fontSize={"lg"} color="black">
+                    PostId
+                  </Th>
+                  <Th fontSize={"lg"} color="black">
+                    Tittle
+                  </Th>
+                  <Th fontSize={"lg"} color="black">
+                    Body
+                  </Th>
                 </Tr>
-              ))}
-            </Tbody>
-          </Table>
-        </TableContainer>
+              </Thead>
+              <Tbody>
+                {paginatedPosts.map((post, index) => (
+                  <Tr key={index}>
+                    <Td>{post.id}</Td>
+                    <Td>{post.title}</Td>
+                    <Td>{post.body}</Td>
+                  </Tr>
+                ))}
+              </Tbody>
+            </Table>
+          </TableContainer>
+          <Container maxW="fit-content">
+            <Paginate />
+          </Container>
+        </>
       )}
     </>
   );
