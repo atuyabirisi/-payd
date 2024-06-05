@@ -1,3 +1,5 @@
+import { TiArrowRightThick } from "react-icons/ti";
+
 export default function Navbar() {
   return (
     <div
@@ -21,12 +23,15 @@ export default function Navbar() {
         </a>
       </div>
       <div className="hidden md:flex flex-1 items-center">
-        <div className="w-full flex justify-center h-fit">
+        <div className="w-full flex items-center justify-center h-fit">
           <a href="/posts" className="text-white flex gap-x-2">
             <span>
               <b>Blog:</b>
             </span>
             <p className="underline">See what is New</p>
+            <div className="flex items-center">
+              <TiArrowRightThick />
+            </div>
           </a>
         </div>
       </div>

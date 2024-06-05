@@ -1,3 +1,5 @@
+import { TiArrowRightThick } from "react-icons/ti";
+
 export default function SignupBanner() {
   return (
     <div className="flex h-full items-center">
@@ -13,9 +15,14 @@ export default function SignupBanner() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
             eligendi quaerat. Nemo sapiente ducimus voluptates earum obcaecati
             molestias fuga eaque eum perferendis enim quod exercitationem amet,
-            officia possimus debitis{" "}
-            <span className="text-white underline">
-              <a href="/posts">See what is new</a>
+            officia possimus debitis <br />
+            <span className="text-white underline flex justify-center">
+              <a href="/posts" className="flex gap-x-3 items-end">
+                See what is new{" "}
+                <div className="flex items-end">
+                  <TiArrowRightThick />
+                </div>
+              </a>
             </span>
           </p>
         </div>
